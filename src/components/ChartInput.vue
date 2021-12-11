@@ -110,7 +110,7 @@ export default defineComponent ({
     word-break: break-all;
     word-wrap: break-word;
     box-sizing: border-box;
-    // visibility: hidden;
+    visibility: hidden;
   }
 }
 #selectuser {
