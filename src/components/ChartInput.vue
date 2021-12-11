@@ -1,5 +1,7 @@
 <template>
+  <!-- bylt -->
   <div class="chart-input">
+    <!-- 文本区域 -->
     <el-input
       class="textArea"
       type="textarea"
@@ -13,7 +15,7 @@
       <span>{{ tempText }}</span>
       <span ref="nowPos">?</span>
     </div>
-    <!-- @选框 -->
+    <!-- 人员区域 -->
     <div id="selectuser" class="selectbox" v-show="showFrendList" ref="selectuser" :style="nowPos">
       <div id="selectlist">
         <div class="selectLi" v-for="item in friendList" @click="choosePeople(item.name, item.userId)" :key="item.userId">
@@ -25,7 +27,6 @@
 </template>
 
 <script>
-// getCurrentInstance
 import { defineComponent, reactive, toRefs, getCurrentInstance } from "vue";
 export default defineComponent ({
   name: 'ChatInput',
